@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<body style="background-color: pink;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+       
+        form {
+            max-width: 500px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        }
+    </style>
+</head>
+<body>
+    <h1>Contacta Con Nosotros</h1>
+    <p>Estamos encantados de que hayas encontrado nuestro refugio digital dedicado al mundo vegetal. Si tienes alguna pregunta, sugerencia o simplemente deseas unirte a nuestra comunidad de fitófilos, no dudes en contactarnos. Estaremos felices de escucharte.</p>
+
+    <form>
+        <label for="nombre">Nombre Completo*</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Dirección de Correo Electrónico*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="asunto">Asunto</label>
+        <select id="asunto" name="asunto">
+            <option value="pregunta">Pregunta General</option>
+            <option value="sugerencia">Sugerencia de Contenido</option>
+            <option value="unirse">Unirse a la Comunidad</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="mensaje">Mensaje*</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
